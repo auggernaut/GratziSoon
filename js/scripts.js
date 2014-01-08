@@ -1,3 +1,23 @@
+/**************************************************
+ *  Gratzi functions
+ ***********************/
+
+var query = window.location.search.substring(1);
+var content;
+
+if(query.indexOf("c1") !== -1){
+    content = { image: "images/gg.jpg", text1: "You are not", text2: "a product.", text3: "You are", text4: "a participant.", text5: "Shouldn't you get credit?" };
+}
+else if(query.indexOf("c2") !== -1){
+    content = { image: "images/vv.jpg", text1: "When everybody's talking", text2: "nobody listens.", text3: "Don't be another lonely voice", text4: "Speak to someone.", text5: "Rediscover connection." };
+}
+else {
+    content = { image: "images/jj.jpg", text1: "Be anyone you want.", text2: "See cool stuff first.", text3: "Make it blow up.", text4: "Reap rewards.", text5: "The next wave is coming." };
+}
+
+
+
+
 
 /***************************************************
 	MODAL BOX WINDOW
@@ -210,7 +230,7 @@ $(document).ready(function() {
 ***************************************************/
 /*
  * jQuery Easing v1.3 - http://gsgd.co.uk/sandbox/jquery/easing/ - Open source under the BSD License. 
- * Copyright å© 2008 George McGinley Smith
+ * Copyright ï¿½ 2008 George McGinley Smith
  * All rights reserved.
  * Redistribution and use in source and binary forms, with or without modification, 
  * are permitted provided that the following conditions are met:
@@ -238,7 +258,7 @@ jQuery.easing.jswing=jQuery.easing.swing;jQuery.extend(jQuery.easing,{def:"easeO
  * 
  * Open source under the BSD License. 
  * 
- * Copyright å© 2001 Robert Penner
+ * Copyright ï¿½ 2001 Robert Penner
  * All rights reserved.
  * 
  * Redistribution and use in source and binary forms, with or without modification, 

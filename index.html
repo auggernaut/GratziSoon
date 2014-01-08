@@ -13,6 +13,8 @@
     <!--[if lt IE 9]>
     <script type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <link href='http://fonts.googleapis.com/css?family=Codystar|Baumans|Bevan|Carter+One' rel='stylesheet' type='text/css'>
+
 </head>
 
 <body>
@@ -26,19 +28,19 @@
         <div class="content">
 
             <div class="circle" id="logo">
-                <h1>Gratzi</h1>
+                <h1>Gra<span class="kern"><span class="yellow">t</span>zi</span></h1>
             </div>
 
             <!-- ADD YOUR INTRO TEXT HERE -->
-            <h2 class="frame-1">You are not</h2>
+            <h2 class="frame-1" id="text1"></h2>
 
-            <h2 class="frame-2">a product.</h2>
+            <h2 class="frame-2" id="text2"></h2>
 
-            <h2 class="frame-3">You are</h2>
+            <h2 class="frame-3" id="text3"></h2>
 
-            <h2 class="frame-4">a participant.</h2>
+            <h2 class="frame-4" id="text4"></h2>
 
-            <h2 class="frame-5"><span>Shouldn't you get credit?</span></h2>
+            <h2 class="frame-5"><span id="text5"></span></h2>
             <!-- CIRCULAR BUTTON -->
             <div class="circle-link"><a href="#" data-reveal-id="myModal">More...</a>
             </div>
@@ -52,9 +54,9 @@
 
     <p>Gratzi is a new way to create, share, filter, and profit on the internet.</p>
 
-    <p>Our goal is to create opportunity,
-        not a big IPO. The next revolution won't be owned by any single organization. The hearts and minds
-        of participants will determine the value of participation.</p>
+    <p>Our goal is to create opportunity for people to thrive.<br/>
+        We believe that vast human potential will be unleashed when<br/>
+        the hearts and minds of participants determine the value of participation.</p>
 
     <p>Let the dams burst. </p>
     <!--&lt;!&ndash; COUNTDOWN &ndash;&gt;-->
@@ -81,17 +83,6 @@
 
     <!-- EMAIL UPDATES -->
     <div class="details">
-<!--
-        <form action="send.php" id="contact_form" method="post" name="contact_form">
-            <div id="email_input">
-                <input type="text" name="email" id="email" value="Enter Your Email For Updates"
-                       class="email requiredField" onfocus="if(this.value == 'Enter Your Email For Updates')
-	{ this.value = ''; }" onblur="if(this.value == '') { this.value = 'Enter Your Email For Updates'; }"
-                        />
-                <input type="submit" id="submit" value="SUBMIT"/>
-            </div>
-        </form>
--->
 
         <form action="http://datacosmos.us4.list-manage.com/subscribe/post?u=fea203bdaaed7b0312d155f52&amp;id=3e9987e283"
               method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
@@ -101,8 +92,8 @@
             <div id="email_input">
                 <input type="email" value="" name="EMAIL" class="email input-block-level" id="mce-EMAIL"
                        value="Enter Your Email For Updates"
-                        required onfocus="if(this.value == 'Enter Your Email For Updates')
-	{ this.value = ''; }" onblur="if(this.value == '') { this.value = 'Enter Your Email For Updates'; }" />
+                        required
+                        placeholder="Enter you email for updates"/>
 
                 <input type="submit" value="SUBMIT" name="subscribe" id="mc-embedded-subscribe"
                        class="btn btn-inverse btn-large">
@@ -141,10 +132,16 @@
     jQuery(function ($) {
         $.supersized({
             slides: [
-                {image: 'images/gg.jpg'}
+                {image: content.image}
             ]
         });
     });
+
+    $("#text1").html(content.text1);
+    $("#text2").html(content.text2);
+    $("#text3").html(content.text3);
+    $("#text4").html(content.text4);
+    $("#text5").html(content.text5);
     //]]>
 </script>
 
@@ -156,6 +153,17 @@
         $("#preloader").delay(350).fadeOut("slow");
     })
     //]]>
+</script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-9628849-4', 'gratzi.me');
+    ga('send', 'pageview');
+
 </script>
 
 </body>
