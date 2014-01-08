@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+		<head>
+          <title>Gratzi - Cooming Soon</title>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" type="text/css" href="css/style.css" />
+          <!--[if lt IE 10]><link rel="stylesheet" type="text/css" href="css/styleIE.css" /><![endif]-->
+          <script type="text/javascript" src="js/jquery.js"></script>
+			<script type="text/javascript" src="js/scripts.js"></script>
+       <!--[if lt IE 9]>
+            <script type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+          <![endif]-->
+        </head>
+ 
+		<body>
+		<!-- Preloader -->
+		<div id="preloader">
+		<div id="status">&nbsp;</div>
+		</div>
+		
+		 <div class="wrapper">
+            <div class="container">
+              <div class="content">
+
+                    <div class="circle" id="logo">
+                        <h1>Gratzi</h1>
+                    </div>
+
+					<!-- ADD YOUR INTRO TEXT HERE -->
+                	<h2 class="frame-1">You are not</h2>
+
+                	<h2 class="frame-2">a product.</h2>
+
+                	<h2 class="frame-3">You are</h2>
+
+                	<h2 class="frame-4">a participant.</h2>
+
+                	<h2 class="frame-5"><span>Shouldn't you get credit?</span></h2>
+				<!-- CIRCULAR BUTTON -->
+                <div class="circle-link"><a href="#" data-reveal-id="myModal">Join us!</a>
+				</div>
+              </div>
+            </div>
+          </div>
+ 		<!-- END INTRO -->
+		<!-- DROP DOWN BOX STARTS -->
+          <div id="myModal" class="reveal-modal">
+            	<h1>Join the revolution.</h1>
+
+            <p>Gratzi is a new way to create, share, filter, and profit on the internet.</p>
+              <p>Our goal is to create opportunity,
+            not a big IPO. The next revolution won't be owned by any single organization. The hearts and minds
+                of participants will determine the value of participation.</p>
+              <p>Let the dams burst. </p>
+            <!--&lt;!&ndash; COUNTDOWN &ndash;&gt;-->
+            <!--<div class="counter">-->
+              <!--<div id="launch_date"></div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash;END COUNTDOWN&ndash;&gt;-->
+
+            <!--&lt;!&ndash; COUNTDOWN - ADD YOUR DATE HERE&ndash;&gt;-->
+            <!--<script type="text/javascript">-->
+              <!--//<![CDATA[-->
+              <!--$(document).ready(function ()-->
+              <!--{-->
+                <!--var austDay = new Date("January 1, 2014");-->
+                <!--$('#launch_date').countdown(-->
+                <!--{-->
+                  <!--until: austDay,-->
+                  <!--layout: '<ul class="countdown"><li><span class="number">{dn}<\/span><br/><span class="time">{dl}<\/span><\/li><li><span class="number">{hn}<\/span><br/><span class="time">{hl}<\/span><\/li><li><span class="number">{mn}<\/span><br/><span class="time">{ml}<\/span><\/li><li><span class="number">{sn}<\/span><br/><span class="time">{sl}<\/span><\/li><\/ul>'-->
+                <!--});-->
+                <!--$('#year').text(austDay.getFullYear());-->
+              <!--});-->
+              <!--//]]>-->
+            <!--</script>-->
+
+            <!-- EMAIL UPDATES -->
+            <div class="details">
+              <form action="send.php" id="contact_form" method="post" name="contact_form">
+                <div id="email_input">
+                  <input type="text" name="email" id="email" value="Enter Your Email For Updates"
+                  class="email requiredField" onfocus="if(this.value == 'Enter Your Email For Updates') 
+	{ this.value = ''; }" onblur="if(this.value == '') { this.value = 'Enter Your Email For Updates'; }"
+                  />
+                  <input type="submit" id="submit" value="SUBMIT" />
+                </div>
+              </form>
+            </div>
+
+		<!-- SOCIAL ICONS -->
+            <!--<div id="social">-->
+              <!--<div id="icons">-->
+				<!--<a href="#"><img src="images/facebook.png" width="32" height="32" alt="facebook" /></a> -->
+                <!--<a href="#"><img src="images/email.png" width="32" height="32" alt="email" /></a>	-->
+				<!--<a href="#"><img src="images/linkedin.png" width="32" height="32" alt="linkedin" /></a> -->
+				<!--<a href="#"><img src="images/twitter.png" width="32" height="32" alt="twitter" /> </a>-->
+				<!--<a href="#"><img src="images/dribbble.png" width="32" height="32" alt="dribbble" /></a> -->
+				<!--<a href="#"><img src="images/forrst.png" width="32" height="32" alt="forrst" /></a>-->
+				<!--<a href="#"><img src="images/youtube.png" width="32" height="32" alt="youtube" /></a>-->
+				<!--<a href="#"><img src="images/behance.png" width="32" height="32" alt="behance" /></a>-->
+				<!--<a href="#"><img src="images/flickr.png" width="32" height="32" alt="flickr" /></a> -->
+				<!--<a href="#"><img src="images/deviantart.png" width="32" height="32" alt="deviantart" /></a>-->
+				<!--<a href="#"><img src="images/vimeo.png" width="32" height="32" alt="vimeo" /></a>-->
+				<!--<a href="#"><img src="images/pinterest.png" width="32" height="32" alt="pinterest" /></a>-->
+				<!--<a href="#"><img src="images/stumbleupon.png" width="32" height="32" alt="stumbleupon" /></a>-->
+				<!--<a href="#"><img src="images/skype.png" width="32" height="32" alt="skype" /></a>-->
+              <!--</div>-->
+            <!--</div>-->
+
+			<!-- CLOSE BUTTON -->
+			<a class="close-reveal-modal">&#215;</a>
+			</div>
+        
+
+	<!-- YOUR BACKGROUND IMAGE SETTINGS -->
+	<script type="text/javascript">
+	//<![CDATA[
+	jQuery(function($){
+		$.supersized({
+		slides : [ {image : 'images/gg.jpg'} ]
+			});
+		    });
+		//]]>
+		</script>
+		
+	<!-- Preloader -->
+	<script type="text/javascript">
+	//<![CDATA[
+		$(window).load(function() { 
+			$("#status").fadeOut(); 
+			$("#preloader").delay(350).fadeOut("slow"); 
+		})
+	//]]>
+</script> 
+		
+	</body>
+</html>
