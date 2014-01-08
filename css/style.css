@@ -63,7 +63,7 @@ a {
 
 .wrapper {  width: 100%; position: relative;  overflow: hidden; }
 
-#logo { margin: 10px auto; text-align: center;
+#logo { margin: 35px auto; text-align: center;
 	-webkit-animation-delay: 2s;
     -moz-animation-delay: 2s;
     -ms-animation-delay: 2s;
@@ -295,16 +295,17 @@ a {
     -webkit-box-shadow: 0 0 5px 2px #111;
     box-shadow: 0 0 5px 2px #111;
 text-align:center;
-    height: 400px;
+    height: 450px;
 }
 
 a.close-reveal-modal:hover { color: #fff; }
 
 .reveal-modal h1 {
-    font-size: 20px;
+    font-size: 35px;
     color: #ccc;
     line-height: 1.9;
     font-family: 'BebasNeueRegular';
+    margin-top: 65px;
 }
 
 .reveal-modal h2 {
@@ -313,7 +314,10 @@ a.close-reveal-modal:hover { color: #fff; }
     font-family: 'BebasNeueRegular';
 }
 
-.reveal-modal p { margin: 5px 0 10px; font-size:12px; line-height:1.5;}
+.reveal-modal p {
+    margin: 5px 0 10px;
+    font-size:15px;
+    line-height:1.5;}
 
 .reveal-modal .close-reveal-modal {
     font-size: 22px;
@@ -399,7 +403,7 @@ a.close-reveal-modal:hover { color: #fff; }
     text-align: left;
 }
 
-input#email {
+input#mce-EMAIL {
     background: url(../images/mail-bg.png) no-repeat;
     width: 217px;
     height: 46px;
@@ -415,7 +419,7 @@ input#email {
     opacity: .90;
 }
 
-input#submit {
+input#mc-embedded-subscribe {
     background: url(../images/submit.png) no-repeat 0px -1px;
     width: 130px;
     height: 46px;
@@ -428,7 +432,7 @@ input#submit {
     letter-spacing: 2px;
 }
 
-input#submit:active {
+input#mc-embedded-subscribe:active {
     -moz-transform: translateY(1px);
     -ms-transform: translateY(1px);
     -o-transform: translateY(1px);
